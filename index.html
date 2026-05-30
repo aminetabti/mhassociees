@@ -12,24 +12,32 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <header class="nav" id="nav">
     <div class="nav-inner container">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <span class="logo-mh">M&amp;H</span>
         <span class="logo-assoc">Associées</span>
       </a>
       <nav class="nav-links" id="nav-links">
-        <a href="#services" data-fr="Services" data-en="Services">Services</a>
-        <a href="#about" data-fr="À propos" data-en="About">À propos</a>
-        <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
-        <a href="#contact" class="btn btn-sm" data-fr="Consultation" data-en="Consultation">Consultation</a>
+        <a href="le-cabinet.html"><span class="fr">Le cabinet</span><span class="en hidden">About</span></a>
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            <span class="fr">Services</span><span class="en hidden">Services</span>
+            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="droit-criminel.html"><span class="fr">Droit criminel</span><span class="en hidden">Criminal Law</span></a>
+            <a href="droit-immigration.html"><span class="fr">Droit en immigration</span><span class="en hidden">Immigration Law</span></a>
+            <a href="droit-carceral.html"><span class="fr">Droit carcéral</span><span class="en hidden">Carceral Law</span></a>
+            <a href="droit-jeunesse.html"><span class="fr">Droit de la jeunesse</span><span class="en hidden">Youth Law</span></a>
+          </div>
+        </div>
+        <a href="contact.html"><span class="fr">Contact</span><span class="en hidden">Contact</span></a>
+        <a href="contact.html" class="btn btn-sm"><span class="fr">Consultation</span><span class="en hidden">Consultation</span></a>
       </nav>
       <div class="nav-right">
         <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
-          <span class="lang-fr active">FR</span>
-          <span class="lang-sep">/</span>
-          <span class="lang-en">EN</span>
+          <span class="lang-fr">FR</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -38,22 +46,22 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <p class="hero-eyebrow" data-fr="Cabinet d'avocats — Montréal" data-en="Law Firm — Montréal">Cabinet d'avocats — Montréal</p>
+        <p class="hero-eyebrow fr">Cabinet d'avocats — Montréal</p>
+        <p class="hero-eyebrow en hidden">Law Firm — Montréal</p>
         <h1 class="hero-title">
           <span class="fr">Chacun mérite un accès équitable à la justice.</span>
           <span class="en hidden">Everyone deserves equitable access to justice.</span>
         </h1>
         <p class="hero-sub">
-          <span class="fr">Droit criminel, immigration, carcéral et jeunesse. Une défense rigoureuse, un accompagnement humain.</span>
-          <span class="en hidden">Criminal, immigration, carceral and youth law. Rigorous defence, human support.</span>
+          <span class="fr">Fondé à Montréal, le cabinet M&H Associées est spécialisé en droit criminel et en droit de l'immigration. Une défense rigoureuse, un accompagnement humain.</span>
+          <span class="en hidden">Founded in Montreal, M&H Associées specializes in criminal and immigration law. Rigorous defence, human support at every step.</span>
         </p>
         <div class="hero-ctas">
-          <a href="#contact" class="btn btn-primary" data-fr="Demander une consultation" data-en="Request a Consultation">Demander une consultation</a>
-          <a href="#services" class="btn btn-ghost" data-fr="Nos services" data-en="Our Services">Nos services</a>
+          <a href="contact.html" class="btn btn-primary"><span class="fr">Demander une consultation</span><span class="en hidden">Request a Consultation</span></a>
+          <a href="#services" class="btn btn-ghost"><span class="fr">Nos services</span><span class="en hidden">Our Services</span></a>
         </div>
       </div>
       <div class="hero-badge">
@@ -67,7 +75,6 @@
     <div class="hero-bar"></div>
   </section>
 
-  <!-- SERVICES -->
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
@@ -82,90 +89,63 @@
 
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 4L6 14v6c0 11.1 7.7 21.5 18 24 10.3-2.5 18-12.9 18-24v-6L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
-              <path d="M16 24l5 5 11-11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L6 14v6c0 11.1 7.7 21.5 18 24 10.3-2.5 18-12.9 18-24v-6L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 24l5 5 11-11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3 class="service-title">
-            <span class="fr">Droit criminel</span>
-            <span class="en hidden">Criminal Law</span>
-          </h3>
+          <h3 class="service-title"><span class="fr">Droit criminel</span><span class="en hidden">Criminal Law</span></h3>
           <p class="service-desc">
-            <span class="fr">Représentation experte à chaque étape du processus judiciaire. Nous défendons vos droits avec rigueur face aux accusations criminelles les plus complexes.</span>
-            <span class="en hidden">Expert representation at every stage of legal proceedings. We defend your rights rigorously against even the most complex criminal charges.</span>
+            <span class="fr">Représentation experte à chaque étape du processus judiciaire — de l'arrestation au procès. Nous défendons vos droits face aux accusations les plus complexes.</span>
+            <span class="en hidden">Expert representation at every stage — from arrest to trial. We defend your rights against even the most complex criminal charges.</span>
           </p>
+          <a href="droit-criminel.html" class="service-link"><span class="fr">En savoir plus</span><span class="en hidden">Learn more</span> →</a>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M24 6C24 6 14 16 14 24s10 18 10 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M24 6c0 0 10 10 10 18s-10 18-10 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M6 24h36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M8 16h32M8 32h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/><path d="M24 6C24 6 14 16 14 24s10 18 10 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M24 6c0 0 10 10 10 18s-10 18-10 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M6 24h36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M8 16h32M8 32h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3 class="service-title">
-            <span class="fr">Droit de l'immigration</span>
-            <span class="en hidden">Immigration Law</span>
-          </h3>
+          <h3 class="service-title"><span class="fr">Droit en immigration</span><span class="en hidden">Immigration Law</span></h3>
           <p class="service-desc">
             <span class="fr">Accompagnement personnalisé pour naviguer les processus d'immigration canadienne — résidence, statut de réfugié, expulsion et au-delà.</span>
-            <span class="en hidden">Personalized guidance through Canadian immigration processes — residency, refugee status, deportation defence, and beyond.</span>
+            <span class="en hidden">Personalized guidance through Canadian immigration — residency, refugee status, deportation defence, and more.</span>
           </p>
+          <a href="droit-immigration.html" class="service-link"><span class="fr">En savoir plus</span><span class="en hidden">Learn more</span> →</a>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="8" width="28" height="36" rx="2" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M16 16h16M16 22h16M16 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="34" cy="34" r="7" fill="white" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M31 34l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="36" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M16 16h16M16 22h16M16 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="34" cy="34" r="7" fill="white" stroke="currentColor" stroke-width="2.5"/><path d="M31 34l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3 class="service-title">
-            <span class="fr">Droit carcéral</span>
-            <span class="en hidden">Carceral Law</span>
-          </h3>
+          <h3 class="service-title"><span class="fr">Droit carcéral</span><span class="en hidden">Carceral Law</span></h3>
           <p class="service-desc">
             <span class="fr">Assistance juridique pour les personnes détenues ou faisant face à l'incarcération. Nous veillons à ce que vos droits soient respectés à chaque étape.</span>
             <span class="en hidden">Legal assistance for those facing or experiencing incarceration. We ensure your rights are upheld at every stage of detention.</span>
           </p>
+          <a href="droit-carceral.html" class="service-link"><span class="fr">En savoir plus</span><span class="en hidden">Learn more</span> →</a>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 8c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M10 40c0-7.7 6.3-14 14-14s14 6.3 14 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M36 22l3 3-6 6-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z" stroke="currentColor" stroke-width="2.5"/><path d="M10 40c0-7.7 6.3-14 14-14s14 6.3 14 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M36 22l3 3-6 6-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3 class="service-title">
-            <span class="fr">Droit de la jeunesse</span>
-            <span class="en hidden">Youth Law</span>
-          </h3>
+          <h3 class="service-title"><span class="fr">Droit de la jeunesse</span><span class="en hidden">Youth Law</span></h3>
           <p class="service-desc">
-            <span class="fr">Représentation dédiée aux mineurs confrontés à la justice. Protection des droits des jeunes avec une approche sensible et adaptée.</span>
-            <span class="en hidden">Dedicated representation for minors facing the justice system. Protecting youth rights with a sensitive, age-appropriate approach.</span>
+            <span class="fr">Représentation dédiée aux mineurs confrontés à la justice et aux familles devant la DPJ. Protection des droits des jeunes avec rigueur et compassion.</span>
+            <span class="en hidden">Dedicated representation for minors in the justice system and families before the DPJ. Youth rights protected with rigour and compassion.</span>
           </p>
+          <a href="droit-jeunesse.html" class="service-link"><span class="fr">En savoir plus</span><span class="en hidden">Learn more</span> →</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container about-inner">
       <div class="about-visual">
         <div class="about-block block-1"></div>
         <div class="about-block block-2">
-          <p class="block-quote fr">"Chacun mérite un accès équitable à la justice."</p>
-          <p class="block-quote en hidden">"Everyone deserves equitable access to justice."</p>
+          <p class="block-quote fr">"En misant sur l'écoute et la compréhension de votre situation, nous visons le meilleur résultat possible."</p>
+          <p class="block-quote en hidden">"By prioritizing listening and understanding your situation, we aim for the best possible outcome."</p>
         </div>
         <div class="about-block block-3"></div>
       </div>
@@ -177,46 +157,35 @@
           <span class="en hidden">Accessible justice. Uncompromising defence.</span>
         </h2>
         <p class="about-body">
-          <span class="fr">M&H Associées inc. est un cabinet montréalais fondé sur la conviction que chaque personne — quelle que soit sa situation — mérite une représentation juridique de qualité. Nous intervenons dans les domaines où les enjeux sont les plus élevés et où nos clients sont souvent les plus vulnérables.</span>
-          <span class="en hidden">M&H Associées inc. is a Montreal firm built on the conviction that every person — regardless of their circumstances — deserves quality legal representation. We work in the areas where stakes are highest and clients are often most vulnerable.</span>
+          <span class="fr">M&H Associées inc. est un cabinet montréalais fondé sur la conviction que chaque personne — quelle que soit sa situation — mérite une représentation juridique de qualité. Nous intervenons dans les domaines où les enjeux sont les plus élevés.</span>
+          <span class="en hidden">M&H Associées inc. is a Montreal firm built on the conviction that every person — regardless of their circumstances — deserves quality legal representation. We work in the areas where stakes are highest.</span>
         </p>
         <p class="about-body">
-          <span class="fr">Notre équipe apporte rigueur, expertise et humanité à chaque dossier. Nous croyons que l'excellence juridique et l'accès équitable à la justice ne sont pas incompatibles — ils sont inséparables.</span>
-          <span class="en hidden">Our team brings rigour, expertise, and humanity to every file. We believe legal excellence and equitable access to justice are not incompatible — they are inseparable.</span>
+          <span class="fr">Notre approche est centrée sur l'écoute et la compréhension de votre situation. Des consultations à distance sont disponibles par vidéoconférence pour les personnes situées hors de Montréal.</span>
+          <span class="en hidden">Our approach is centred on listening and understanding your situation. Remote consultations are available via videoconference for those outside Montreal.</span>
         </p>
         <div class="about-values">
-          <div class="value">
-            <span class="value-icon">⚖️</span>
-            <span class="fr">Équité</span>
-            <span class="en hidden">Equity</span>
-          </div>
-          <div class="value">
-            <span class="value-icon">🎯</span>
-            <span class="fr">Rigueur</span>
-            <span class="en hidden">Rigour</span>
-          </div>
-          <div class="value">
-            <span class="value-icon">🤝</span>
-            <span class="fr">Humanité</span>
-            <span class="en hidden">Humanity</span>
-          </div>
+          <div class="value"><span class="value-icon">⚖️</span><span class="fr">Équité</span><span class="en hidden">Equity</span></div>
+          <div class="value"><span class="value-icon">🎯</span><span class="fr">Rigueur</span><span class="en hidden">Rigour</span></div>
+          <div class="value"><span class="value-icon">🤝</span><span class="fr">Humanité</span><span class="en hidden">Humanity</span></div>
         </div>
+        <a href="le-cabinet.html" class="btn btn-outline" style="margin-top:32px;display:inline-flex;">
+          <span class="fr">En savoir plus sur le cabinet</span><span class="en hidden">Learn more about the firm</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
   <section class="cta-band">
     <div class="container cta-inner">
       <h2 class="cta-title">
         <span class="fr">Votre situation mérite une attention immédiate.</span>
         <span class="en hidden">Your situation deserves immediate attention.</span>
       </h2>
-      <a href="#contact" class="btn btn-primary-light" data-fr="Contactez-nous aujourd'hui" data-en="Contact us today">Contactez-nous aujourd'hui</a>
+      <a href="contact.html" class="btn btn-primary-light"><span class="fr">Contactez-nous aujourd'hui</span><span class="en hidden">Contact us today</span></a>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container contact-inner">
       <div class="contact-info">
@@ -227,81 +196,63 @@
           <span class="en hidden">Let's talk.</span>
         </h2>
         <p class="contact-sub">
-          <span class="fr">Consultations disponibles en français et en anglais. N'hésitez pas à nous écrire ou nous appeler.</span>
-          <span class="en hidden">Consultations available in French and English. Don't hesitate to write or call us.</span>
+          <span class="fr">Consultations disponibles en français et en anglais, en personne ou par vidéoconférence.</span>
+          <span class="en hidden">Consultations available in French and English, in person or by videoconference.</span>
         </p>
         <div class="contact-details">
           <div class="contact-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
-              </svg>
-            </div>
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg></div>
             <div>
-              <p class="contact-label fr">Adresse</p>
-              <p class="contact-label en hidden">Address</p>
+              <p class="contact-label fr">Adresse</p><p class="contact-label en hidden">Address</p>
               <p class="contact-value">85 Rue St-Paul O, Suite 290<br>Montréal, Québec H2Y 3V4</p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
-              </svg>
-            </div>
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg></div>
             <div>
-              <p class="contact-label fr">Téléphone</p>
-              <p class="contact-label en hidden">Phone</p>
+              <p class="contact-label fr">Téléphone</p><p class="contact-label en hidden">Phone</p>
               <a href="tel:4388017134" class="contact-value contact-link">438-801-7134</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
-              </svg>
-            </div>
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg></div>
             <div>
-              <p class="contact-label fr">Courriel</p>
-              <p class="contact-label en hidden">Email</p>
+              <p class="contact-label fr">Courriel</p><p class="contact-label en hidden">Email</p>
               <a href="mailto:info@mhassociees.com" class="contact-value contact-link">info@mhassociees.com</a>
             </div>
           </div>
         </div>
+        <p class="pricing-note fr">Nos tarifs sont communiqués lors du premier rendez-vous, selon la nature de votre dossier.</p>
+        <p class="pricing-note en hidden">Our rates are discussed at the initial consultation based on the nature of your case.</p>
       </div>
       <form class="contact-form" id="contact-form" novalidate>
         <div class="form-row">
           <div class="form-group">
-            <label for="name" class="fr">Nom complet</label>
-            <label for="name" class="en hidden">Full name</label>
+            <label for="name"><span class="fr">Nom complet</span><span class="en hidden">Full name</span></label>
             <input type="text" id="name" name="name" required autocomplete="name" />
           </div>
           <div class="form-group">
-            <label for="email" class="fr">Courriel</label>
-            <label for="email" class="en hidden">Email</label>
+            <label for="email"><span class="fr">Courriel</span><span class="en hidden">Email</span></label>
             <input type="email" id="email" name="email" required autocomplete="email" />
           </div>
         </div>
         <div class="form-group">
-          <label for="subject" class="fr">Domaine juridique concerné</label>
-          <label for="subject" class="en hidden">Area of law</label>
+          <label for="subject"><span class="fr">Domaine juridique concerné</span><span class="en hidden">Area of law</span></label>
           <select id="subject" name="subject">
-            <option value="" disabled selected class="fr">Sélectionner…</option>
-            <option value="criminel" class="fr">Droit criminel</option>
-            <option value="immigration" class="fr">Immigration</option>
-            <option value="carceral" class="fr">Droit carcéral</option>
-            <option value="jeunesse" class="fr">Droit de la jeunesse</option>
-            <option value="autre" class="fr">Autre</option>
+            <option value="" disabled selected></option>
+            <option value="criminel"></option>
+            <option value="immigration"></option>
+            <option value="carceral"></option>
+            <option value="jeunesse"></option>
+            <option value="autre"></option>
           </select>
         </div>
         <div class="form-group">
-          <label for="message" class="fr">Votre message</label>
-          <label for="message" class="en hidden">Your message</label>
+          <label for="message"><span class="fr">Votre message</span><span class="en hidden">Your message</span></label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary form-submit">
-          <span class="fr">Envoyer</span>
-          <span class="en hidden">Send</span>
+          <span class="fr">Envoyer</span><span class="en hidden">Send</span>
         </button>
         <p class="form-note fr">Vos informations sont traitées de manière confidentielle.</p>
         <p class="form-note en hidden">Your information is handled with complete confidentiality.</p>
@@ -309,24 +260,47 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="logo-mh">M&amp;H</span>
-        <span class="logo-assoc">Associées inc.</span>
-        <p class="footer-tagline fr">Chacun mérite un accès équitable à la justice.</p>
-        <p class="footer-tagline en hidden">Everyone deserves equitable access to justice.</p>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-mh">M&amp;H</span><span class="logo-assoc">Associées inc.</span></div>
+          <p class="footer-tagline fr">Chacun mérite un accès équitable à la justice.</p>
+          <p class="footer-tagline en hidden">Everyone deserves equitable access to justice.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <p class="footer-col-title fr">Services</p>
+            <p class="footer-col-title en hidden">Services</p>
+            <a href="droit-criminel.html"><span class="fr">Droit criminel</span><span class="en hidden">Criminal Law</span></a>
+            <a href="droit-immigration.html"><span class="fr">Immigration</span><span class="en hidden">Immigration</span></a>
+            <a href="droit-carceral.html"><span class="fr">Droit carcéral</span><span class="en hidden">Carceral Law</span></a>
+            <a href="droit-jeunesse.html"><span class="fr">Droit de la jeunesse</span><span class="en hidden">Youth Law</span></a>
+          </div>
+          <div class="footer-col">
+            <p class="footer-col-title fr">Cabinet</p>
+            <p class="footer-col-title en hidden">Firm</p>
+            <a href="le-cabinet.html"><span class="fr">À propos</span><span class="en hidden">About</span></a>
+            <a href="contact.html"><span class="fr">Contact</span><span class="en hidden">Contact</span></a>
+            <a href="contact.html"><span class="fr">Consultation</span><span class="en hidden">Consultation</span></a>
+          </div>
+          <div class="footer-col">
+            <p class="footer-col-title fr">Nous joindre</p>
+            <p class="footer-col-title en hidden">Reach us</p>
+            <p class="footer-addr">85 Rue St-Paul O, Suite 290<br>Montréal, QC H2Y 3V4</p>
+            <a href="tel:4388017134" class="footer-addr">438-801-7134</a>
+            <a href="mailto:info@mhassociees.com" class="footer-addr">info@mhassociees.com</a>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#services" class="fr">Services</a>
-        <a href="#services" class="en hidden">Services</a>
-        <a href="#about" class="fr">À propos</a>
-        <a href="#about" class="en hidden">About</a>
-        <a href="#contact" class="fr">Contact</a>
-        <a href="#contact" class="en hidden">Contact</a>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 M&amp;H Associées inc. <span class="fr">Tous droits réservés.</span><span class="en hidden">All rights reserved.</span></p>
       </div>
-      <p class="footer-copy">© 2026 M&amp;H Associées inc. <span class="fr">Tous droits réservés.</span><span class="en hidden">All rights reserved.</span></p>
     </div>
   </footer>
 
