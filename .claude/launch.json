@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "mhassociees",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "3456"],
+      "runtimeExecutable": "ruby",
+      "runtimeArgs": [".claude/serve.rb", "3456"],
       "port": 3456
     }
   ]
