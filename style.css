@@ -440,6 +440,14 @@ a.footer-addr:hover { color: rgba(255,255,255,.75); }
 @media (max-width: 768px) {
   :root { --nav-h: 60px; }
 
+  /* No backdrop-filter on mobile: a filter here makes .nav the containing block
+     for the fixed mobile menu, collapsing it when the page is scrolled. */
+  .nav.scrolled, .nav.nav-solid {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #fff;
+  }
+
   /* Nav mobile */
   .nav-links {
     display: none; position: fixed;
