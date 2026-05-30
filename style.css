@@ -479,7 +479,10 @@ a.footer-addr:hover { color: rgba(255,255,255,.75); }
   /* Emergency banner */
   .emergency-text-full { display: none; }
   .emergency-text-short { display: inline; }
-  .emergency-inner { gap: 10px; }
+  .emergency-inner { gap: 10px; padding: 0 24px; }
+  .emergency-text { font-size: .75rem; letter-spacing: .02em; }
+  .emergency-phone { padding: 4px 12px; font-size: .8125rem; gap: 6px; }
+  .emergency-phone::before { width: 12px; height: 12px; }
 
   /* Hero */
   .hero-inner { grid-template-columns: 1fr; gap: 0; padding-top: calc(var(--banner-h) + var(--nav-h) + 24px); padding-bottom: 48px; }
