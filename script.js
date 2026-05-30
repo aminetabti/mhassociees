@@ -89,20 +89,52 @@ fadeTargets.forEach(el => observer.observe(el));
 /* ─── Contact form ──────────────────────────────────────────────────────────── */
 const form = document.getElementById('contact-form');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  const t = (fr, en) => (currentLang === 'fr' ? fr : en);
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Honeypot: real users never fill this hidden field.
+    const honey = form.querySelector('[name="_honey"]');
+    if (honey && honey.value) return;
+
+    // Every field must be filled before the request can be sent.
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+
     const btn = form.querySelector('.form-submit');
     const original = btn.innerHTML;
-    btn.textContent = currentLang === 'fr' ? 'Envoyé ✓' : 'Sent ✓';
-    btn.disabled = true;
-    btn.style.cssText = 'background:#16a34a;border-color:#16a34a;cursor:default';
-    setTimeout(() => {
+    const reset = (delay) => setTimeout(() => {
       btn.innerHTML = original;
       btn.disabled = false;
       btn.style.cssText = '';
-      form.reset();
       setLang(currentLang);
-    }, 3000);
+    }, delay);
+
+    btn.disabled = true;
+    btn.style.cssText = '';
+    btn.textContent = t('Envoi…', 'Sending…');
+
+    try {
+      const endpoint = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && (data.success === true || data.success === 'true')) {
+        btn.textContent = t('Envoyé ✓', 'Sent ✓');
+        btn.style.cssText = 'background:#16a34a;border-color:#16a34a;cursor:default';
+        form.reset();
+        reset(3500);
+      } else {
+        throw new Error('submit failed');
+      }
+    } catch (err) {
+      btn.textContent = t('Erreur — réessayer', 'Error — try again');
+      btn.style.cssText = 'background:#dc2626;border-color:#dc2626;cursor:pointer';
+      reset(3500);
+    }
   });
 }
 

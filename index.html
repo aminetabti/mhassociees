@@ -249,7 +249,7 @@
         <p class="pricing-note fr">Nos tarifs sont communiqués lors du premier rendez-vous, selon la nature de votre dossier.</p>
         <p class="pricing-note en hidden">Our rates are discussed at the initial consultation based on the nature of your case.</p>
       </div>
-      <form class="contact-form" id="contact-form" novalidate>
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/info@mhassociees.com" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label for="name"><span class="fr">Nom complet</span><span class="en hidden">Full name</span></label>
@@ -262,7 +262,7 @@
         </div>
         <div class="form-group">
           <label for="subject"><span class="fr">Domaine juridique concerné</span><span class="en hidden">Area of law</span></label>
-          <select id="subject" name="subject">
+          <select id="subject" name="subject" required>
             <option value="" disabled selected></option>
             <option value="criminel"></option>
             <option value="immigration"></option>
@@ -275,6 +275,9 @@
           <label for="message"><span class="fr">Votre message</span><span class="en hidden">Your message</span></label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
+        <input type="hidden" name="_subject" value="Nouvelle demande — site M&amp;H Associées inc." />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
         <button type="submit" class="btn btn-primary form-submit">
           <span class="fr">Envoyer</span><span class="en hidden">Send</span>
         </button>
@@ -328,6 +331,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>

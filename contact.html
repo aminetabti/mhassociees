@@ -116,7 +116,7 @@
         </div>
       </div>
 
-      <form class="contact-form" id="contact-form" novalidate>
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/info@mhassociees.com" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label for="name"><span class="fr">Nom complet</span><span class="en hidden">Full name</span></label>
@@ -128,12 +128,12 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="phone"><span class="fr">Téléphone (optionnel)</span><span class="en hidden">Phone (optional)</span></label>
-          <input type="tel" id="phone" name="phone" autocomplete="tel" />
+          <label for="phone"><span class="fr">Téléphone</span><span class="en hidden">Phone</span></label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" />
         </div>
         <div class="form-group">
           <label for="subject"><span class="fr">Domaine juridique concerné</span><span class="en hidden">Area of law</span></label>
-          <select id="subject" name="subject">
+          <select id="subject" name="subject" required>
             <option value="" disabled selected></option>
             <option value="criminel"></option>
             <option value="immigration"></option>
@@ -146,6 +146,9 @@
           <label for="message"><span class="fr">Décrivez brièvement votre situation</span><span class="en hidden">Briefly describe your situation</span></label>
           <textarea id="message" name="message" rows="6" required></textarea>
         </div>
+        <input type="hidden" name="_subject" value="Nouvelle demande — site M&amp;H Associées inc." />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
         <button type="submit" class="btn btn-primary form-submit">
           <span class="fr">Envoyer ma demande</span><span class="en hidden">Send my request</span>
         </button>
@@ -196,6 +199,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
