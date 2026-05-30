@@ -202,7 +202,8 @@ img, svg { display: block; max-width: 100%; }
 .hero-inner {
   display: grid; grid-template-columns: 1fr auto;
   align-items: center; gap: 64px;
-  padding: calc(var(--banner-h) + var(--nav-h) + clamp(48px, 8vh, 96px)) 0 clamp(48px, 8vh, 96px);
+  padding-top: calc(var(--banner-h) + var(--nav-h) + clamp(48px, 8vh, 96px));
+  padding-bottom: clamp(48px, 8vh, 96px);
   position: relative; align-self: center;
 }
 .hero-eyebrow { font-size: .8125rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--c-gold); margin-bottom: 20px; }
