@@ -535,7 +535,7 @@ a.footer-addr:hover { color: rgba(255,255,255,.75); }
   .hero-title { font-size: 1.875rem; }
   .page-hero-title { font-size: 1.625rem; }
   .section-title { font-size: 1.5rem; }
-  .about-values { flex-direction: row; justify-content: center; }
+  .about-values { flex-direction: row; justify-content: flex-start; }
   .pricing-note { font-size: .8125rem; }
 }
 
