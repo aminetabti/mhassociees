@@ -141,8 +141,9 @@ img, svg { display: block; max-width: 100%; }
 .hero {
   background: var(--c-hero-bg);
   min-height: 100svh; min-height: 100vh;
-  display: flex; flex-direction: column; justify-content: center;
-  padding-top: var(--nav-h); position: relative; overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  position: relative; overflow: hidden;
 }
 .hero::before {
   content: ''; position: absolute; inset: 0;
@@ -154,7 +155,8 @@ img, svg { display: block; max-width: 100%; }
 .hero-inner {
   display: grid; grid-template-columns: 1fr auto;
   align-items: center; gap: 64px;
-  padding-top: 64px; padding-bottom: 64px; position: relative;
+  padding: calc(var(--nav-h) + clamp(48px, 8vh, 96px)) 0 clamp(48px, 8vh, 96px);
+  position: relative; align-self: center;
 }
 .hero-eyebrow { font-size: .8125rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--c-gold); margin-bottom: 20px; }
 .hero-title { font-family: var(--font-serif); font-size: clamp(2rem, 5.5vw, 3.75rem); font-weight: 700; line-height: 1.15; color: #fff; margin-bottom: 24px; max-width: 640px; }
@@ -220,7 +222,10 @@ img, svg { display: block; max-width: 100%; }
   display: flex; flex-direction: column; gap: 32px; height: 100%;
 }
 .about-panel-quote { display: flex; flex-direction: column; gap: 18px; }
-.quote-icon { width: 36px; height: 36px; color: var(--c-gold); flex-shrink: 0; }
+.about-quote-mark {
+  font-family: var(--font-serif); font-size: 5rem; line-height: .7;
+  color: var(--c-gold); display: block; opacity: .75;
+}
 .about-panel-text {
   font-family: var(--font-serif); font-size: clamp(.975rem, 1.8vw, 1.125rem);
   font-style: italic; color: rgba(255,255,255,.9); line-height: 1.7;
