@@ -6,8 +6,8 @@ const langFrLabel = langToggle && langToggle.querySelector('.lang-fr');
 const langEnLabel = langToggle && langToggle.querySelector('.lang-en');
 
 const SELECT_OPTIONS = {
-  fr: ['Sélectionner…', 'Droit criminel', 'Immigration', 'Droit carcéral', 'Droit de la jeunesse', 'Autre'],
-  en: ['Select…', 'Criminal Law', 'Immigration', 'Carceral Law', 'Youth Law', 'Other'],
+  fr: ['Sélectionner…', 'Droit criminel', 'Immigration', 'Droit carcéral', 'Droit de la jeunesse', 'Droit civil', 'Autre'],
+  en: ['Select…', 'Criminal Law', 'Immigration', 'Carceral Law', 'Youth Law', 'Civil Law', 'Other'],
 };
 
 function setLang(lang) {

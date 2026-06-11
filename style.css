@@ -244,12 +244,13 @@ img, svg { display: block; max-width: 100%; }
 /* ─── Services ──────────────────────────────────────────────────────────────── */
 .services { padding: clamp(60px, 8vw, 100px) 0; background: var(--c-surface); }
 .section-header { text-align: center; margin-bottom: clamp(40px, 6vw, 64px); }
-.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.services-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 .service-card {
   background: var(--c-bg); border: 1px solid var(--c-border);
   border-radius: var(--radius); padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 28px);
   transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s;
   display: flex; flex-direction: column;
+  flex: 1 1 260px; max-width: 340px;
 }
 .service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,.08); border-color: var(--c-accent-light); }
 .service-icon { width: 48px; height: 48px; color: var(--c-accent-light); margin-bottom: 20px; }
@@ -423,7 +424,6 @@ a.footer-addr:hover { color: rgba(255,255,255,.75); }
 
 /* ─── Responsive — 1024px ───────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
   .about-inner { grid-template-columns: 1fr; }
   .about-panel { order: -1; }
   .contact-inner { grid-template-columns: 1fr; gap: 48px; }
@@ -500,7 +500,8 @@ a.footer-addr:hover { color: rgba(255,255,255,.75); }
   .hero-ctas .btn { width: 100%; }
 
   /* Services */
-  .services-grid { grid-template-columns: 1fr; gap: 16px; }
+  .services-grid { gap: 16px; }
+  .service-card { max-width: none; }
 
   /* About */
   .about-panel { order: -1; }
